@@ -20,7 +20,9 @@ public class Generiki {
 
         List<Yokozuna> wrestlers = Arrays.asList(
                 new Yokozuna("Takonaha", 200),
-                new Yokozuna("Anunsasimary", 190)
+                new Yokozuna("Anunsasimary", 190),
+                new Yokozuna("Gurmanaka", 250),
+                new Yokozuna("Brabaris", 179)
         );
 
         wrestlers.sort(Comparator.naturalOrder());
