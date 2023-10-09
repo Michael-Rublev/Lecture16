@@ -9,10 +9,11 @@ public class Yokozuna implements Comparable<Yokozuna> {
 
     @Override
     public int compareTo(Yokozuna o) {
-//        return Integer.compare(weight, o.weight);
-        return String.CASE_INSENSITIVE_ORDER.compare(name, o.name);
+        return Integer.compare(weight, o.weight);
+//        return String.CASE_INSENSITIVE_ORDER.compare(name, o.name);
     }
 
+    @Override
     public String toString() {
         return "{ " + name + ", " + weight + " }";
     }

@@ -6,7 +6,7 @@ import java.util.List;
 public class Generiki {
     public static void main(String[] args) {
         List<Integer> ints = Arrays.asList(1, 2, 3, 45, 6, -9, -222); // изменяемый иютбл коллекшен
-        System.out.println(inlyPositiveInteger(ints));
+        System.out.println(onlyPositiveInteger(ints));
         System.out.println(ints.get(4));
 
         ints.sort(Comparator.naturalOrder());
@@ -32,7 +32,7 @@ public class Generiki {
         System.out.println(wrestlers);
     }
 
-    static List<Integer> inlyPositiveInteger(List<Integer> list) {
+    static List<Integer> onlyPositiveInteger(List<Integer> list) {
         List<Integer> result = new ArrayList<>(); //дженерики работают с объектными типами, поэтому интеджер а не инт
         for (Integer i : list) { //for loop и итеребл (самый короткий и самый удобный способ перечисления лучше фор (и)
             if (i > 0) {
